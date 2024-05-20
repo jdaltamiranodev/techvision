@@ -225,6 +225,12 @@ img {
     }
 }
 
+@media (min-width: 1600px) {
+    .sobre-tech {
+        background-size: 100%, 210rem;
+    }
+}
+
 .texto-sobre-tech h2 {
     font-size: 4rem;
 }
