@@ -61,6 +61,20 @@ img {
     height: auto;
 }
 
+.btn {
+    color: var(--gris);
+    background-color: var(--blanco);
+    border: 1px solid var(--gris);
+    padding: .5rem 2rem;
+    transition: background-color .3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
 /* Utilidades */
 .text-center {
     text-align: center;
@@ -218,4 +232,84 @@ img {
 .texto-sobre-tech p {
     font-size: 2rem;
     line-height: 2;
+}
+
+/* Modelos */
+.titulo-modelos {
+    text-align: center;
+}
+
+.modelo {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 5rem;
+}
+
+.modelo:last-of-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .modelo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contenido-modelo {
+    background-color: var(--blanco);
+    padding: 5rem;
+    grid-row: 2 / 2;
+}
+
+.eclipse {
+    background-image: url(../img/ai-pin-eclipse-front.jpg);
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .eclipse {
+        background-position: top left;
+    }
+
+    .eclipse .contenido-modelo {
+        grid-column: 2 / 2;
+        grid-row: 2 / 3;
+        padding: 2rem 2rem 2rem 0;
+    }
+}
+
+.lunar {
+    background-image: url(../img/ai-pin-lunar-front.jpg);
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .lunar {
+        background-position: top right;
+    }
+
+    .lunar .contenido-modelo {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 2rem;
+    }
+}
+
+.equinox {
+    background-image: url(../img/ai-pin-equinox-front.jpg);
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .equinox {
+        background-position: top left;
+    }
+
+    .equinox .contenido-modelo {
+        grid-column: 2 / 2;
+        grid-row: 2 / 3;
+        padding: 2rem 2rem 2rem 0;
+    }
 }
