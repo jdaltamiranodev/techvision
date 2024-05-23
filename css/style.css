@@ -62,22 +62,33 @@ img {
 }
 
 .btn {
-    color: var(--gris);
-    background-color: var(--blanco);
+    color: var(--blanco);
+    background-color: var(--gris);
     border: 1px solid var(--gris);
-    padding: .5rem 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
     transition: background-color .3s;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn:hover {
-    background-color: var(--gris);
-    color: var(--blanco);
+    background-color: var(--blanco);
+    color: var(--gris);
 }
 
 /* Utilidades */
 .text-center {
     text-align: center;
+}
+
+/* Fecha */
+.fecha {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--negro);
 }
 
 /* Header */
@@ -92,6 +103,39 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.imagen-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-cambio {
+    margin-top: 2rem;
+    width: 90%;
+    display: inline-block;
+    color: var(--negro);
+    background-color: var(--grisClaro);
+    border: 1px solid var(--gris);
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color .3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .btn-cambio {
+        width: 50%;
+    }
+}
+
+.btn-cambio:hover {
+    background-color: #5e5e5e;
+    color: var(--blanco);
 }
 
 .texto-header {
