@@ -12,6 +12,7 @@ let estadoActual = 'img/ai-pin-lunar-front.jpg';
 
 btnPolitica.addEventListener('change', habilitarBoton);
 
+// Habilitar Botón
 function habilitarBoton() {
     if (btnPolitica.checked) {
         btnEnviar.disabled = false;
@@ -20,6 +21,7 @@ function habilitarBoton() {
     }
 }
 
+// Mostrar Fecha
 function mostrarFecha() {
     const fecha = new Date();
     const diaMes = fecha.getDate();
@@ -37,13 +39,17 @@ function mostrarFecha() {
     let horas = horaActual < 10 ? `0${horaActual}` : horaActual;
     let minutos = minutoActual < 10 ? `0${minutoActual}` : minutoActual;
 
-    fechaActual.innerHTML = `${dia} ${diaMes} de ${mes} de ${anio}, ${horas}:${minutos}`;
+    const textoFecha = document.createElement('P');
+    textoFecha.innerHTML = `${dia} ${diaMes} de ${mes} de ${anio}, ${horas}:${minutos}`;
+    fechaActual.appendChild(textoFecha);
+
 }
 
 mostrarFecha();
 
 btnCambio.addEventListener('click', cambiarImagen);
 
+// Cambiar Imagen
 function cambiarImagen() {
     const imagenUno = 'img/ai-pin-lunar-front.jpg';
     const imagenDos = 'img/ai-pin-equinox-front.jpg';
