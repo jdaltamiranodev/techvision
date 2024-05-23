@@ -367,6 +367,14 @@ img {
     padding: 1rem;
 }
 
+.chequeo {
+    display: flex;
+}
+
+.chequeo p {
+    margin-left: 1rem;
+}
+
 /* Footer */
 .copyright {
     background-color: var(--negro);
