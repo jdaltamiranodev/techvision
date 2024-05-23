@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <meta name="description"
+        content="Página de inicio de sesión de Tech Vision. Inicia sesión para acceder a tu cuenta.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="index.html" class="btn">Volver</a>
+
+    <div class="contenedor-formulario">
+        <div class="titulo-login">
+            <h1 class="titulo">
+                Iniciar Sesión
+            </h1>
+        </div>
+
+        <div class="ventana-logueo contenedor">
+            <div class="campo">
+                <label for="usuario">Usuario: </label>
+                <input type="text" name="usuario" id="usuario" placeholder="Tu usuario" required>
+            </div>
+
+            <div class="campo">
+                <label for="contraseña">Contraseña: </label>
+                <input type="password" name="contraseña" id="contraseña" required>
+                <a class="contenedor-imagen" id="contenedor-imagen">
+                    <img class="imagen-ojo" src="img/ojoCerrado.jpg" alt="">
+                </a>
+            </div>
+            <input type="submit" class="btnlogin" value="Iniciar Sesión">
+        </div>
+
+    </div>
+
+    <script src="js/logueo.js"></script>
+</body>
+
+</html>
