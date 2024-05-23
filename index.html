@@ -14,10 +14,14 @@
 </head>
 
 <body>
+    <div class="fecha" id="fecha">
+        <!-- FECHA -->
+    </div>
     <header class="header">
         <div class="contenedor contenido-header">
             <div class="imagen-header">
-                <img src="img/ai-pin-lunar-front.jpg" alt="imagen pin lunar">
+                <img class="imagen" src="img/ai-pin-lunar-front.jpg" alt="imagen pin lunar">
+                <button class="btn-cambio" id="cambiar">Cambiar modelo</button>
             </div> <!-- .imagen-header -->
 
 
@@ -175,7 +179,7 @@
                 <p> Acepta nuestra política de tratamiento de datos personales</p>
             </div>
 
-            <input class="btn" type="submit" value="Enviar Formulario">
+            <input class="btn" id="enviar" type="submit" value="Enviar Formulario" disabled>
         </form>
 
     </section>
