@@ -98,6 +98,7 @@ img {
     .fecha {
         flex-direction: row;
         justify-content: space-around;
+        margin-top: 0;
     }
 }
 
